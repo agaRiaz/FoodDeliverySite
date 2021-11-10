@@ -1,0 +1,123 @@
+body{
+    background-color: red;
+}
+/* Navigation */
+
+#navbar{
+    flex-direction: column;
+    height:86px;
+
+}
+#navbar ul{
+    margin: 0px;
+    height: 50px;
+    width: 100%;
+    padding: 0px 0px;
+}
+#navbar ul li a{
+    font-size:0.8rem;
+    padding:0px 7px;
+    padding-bottom:20px;
+    width: 65px;
+    height: 28px;
+}
+#navbar #logo{
+    height:36px;
+     margin: 0px;
+}
+#logo img {
+    height: 30px;
+    margin: 2px 3px;
+}
+
+/* home */
+#home{
+    height: 335px;
+    padding: 0px 84px;
+   
+
+}
+#home::before{
+    height: 450px;
+   
+
+}
+#home p{
+    font-size: 13px;
+}
+.btn{
+    font-size:12px;
+    padding:5px 7px;
+}
+
+/* services */
+#services{
+    flex-direction: column;
+
+}
+#services{
+
+}
+
+/* clients */
+#clients{
+    flex-wrap: wrap;
+
+
+}
+#clients img{
+    width:66px;
+    padding:0px 5px;
+}
+
+
+/* contact us */
+#contact{
+
+}
+
+#footer{
+
+}
+
+.h-primary{
+    font-size:26px;
+}
+ome {
+    height: 397px;
+    padding: 0px;
+}
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+user agent stylesheet
+section {
+    display: block;
+}
+:root {
+    --navbar-height: 53px;
+}
+media="screen and (max-width: 875px)"
+#home::before {
+    height: 450px;
+}
+#home::before {
+    content: "";
+    top: 0px;
+    left: 0px;
+    background: url(../images/foodrice.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 665px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}

@@ -1,0 +1,240 @@
+/* css Reset */
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* css variable */
+:root{
+    --navbar-height:53px;
+
+}
+/* Navigation bar */
+#navbar{
+    display:flex;
+    align-items: center;
+    position:sticky;
+    height: 60px;
+    top:0;
+
+   
+
+}
+/* logo and image */
+#logo{
+    height: 75px;
+    margin: 6px 9px;
+
+}
+#logo img{
+    height: 60px;
+    margin: 5px 8px;
+
+}
+#navbar ul{
+    display:flex;
+    margin:5px 2px;
+    
+}
+
+#navbar::before{
+    content:"";
+    top: 0px;
+    left: 0px;    
+    background-color: black;
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    opacity:0.4;
+
+}
+#navbar ul{
+    display: flex;
+    
+}
+#navbar ul li{
+    
+    color:white;
+    list-style: none;
+    font-size: 1.3rem;
+   
+   
+}
+#navbar ul li a{
+    color:white;
+    
+    padding: 5px 20px;
+    margin: 12px 17px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+  
+    
+    
+}
+#home{
+    display:flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content:"";
+    top:0px;
+    left:0px;
+    background: url(../images/foodrice.jpg) no-repeat center center/cover;
+    position:absolute;
+    height: 665px;
+    width: 100%;
+    z-index:-1;
+    opacity:0.89;
+}
+#home h1{
+    color: white;
+    text-align: center;
+   
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#home .btn a{
+    text-decoration: none !important;
+    color: pink !important;
+    
+}
+#home .btn a:hover{
+    color:blueviolet !important;
+}
+
+
+#services{
+    margin: 15px;
+    display: flex;
+    
+}
+#services .box{
+    border: 2px solid brown;
+   padding: 5px;
+   margin: 5px 10px;
+   border-radius: 25px;
+   background-color: cornsilk;
+   margin-bottom: 20px;
+}
+#services img{
+    display: block;
+    height: 100px;
+    width:100px;
+    margin: auto;
+    border-radius: 50%;
+} 
+
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+
+}
+.btn{
+    padding:6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin:17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.center{
+    text-align: center;
+}
+
+
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+}
+/* client section */
+#client-section{
+    height:350px;
+    position: relative;
+    
+}
+
+#client-section::before{
+   content: "";
+   position: absolute;
+   background: url(../images/noodle.jpg) no-repeat center center/cover;
+   width: 100%;
+   height: 100%;
+   z-index:-1;
+   opacity: 0.7;
+   
+}
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#clients img{
+    margin: 6px 17px;
+    height: 115px;
+    padding: 5px 5px;
+    border-radius: 62px;
+    opacity:0.6;
+}
+/* contact section */
+#contact{
+    padding:15px;
+    position: relative;
+    margin-top: 20px;
+
+}
+#contact::before{
+    content: "";
+   position: absolute;
+   top:0px;
+   left: 0px;
+   background: url(../images/fishes.jpg) no-repeat center center/cover;
+   width: 100%;
+   height: 100%;
+   z-index:-1;
+   opacity: 0.7;
+    
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+
+}
+
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    padding:0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width:40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 12px;
+}
